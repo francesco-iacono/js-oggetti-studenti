@@ -2,13 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- foglio stile -->
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js" charset="utf-8"></script>
     <title>Nomi e Cognomi</title>
   </head>
   <body>
-    <h1>Studenti</h1>
-    <p id="nomeCognome"></p>
-
+    <div class="page">
+      <h2>Prof. Gianluca Pesce</h2>
+      <span>Boolean Classe #22</span>
+      <h1>Studenti Presenti</h1>
+      <div class="row-list">
+        <div class="nomi">
+          <h4>NOME</h4>
+          <ol id="nome"></ol>
+        </div>
+        <div class="cognomi">
+          <h4>COGNOME</h4>
+          <ol id="cognome"></ol>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

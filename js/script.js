@@ -25,31 +25,30 @@ $(document).ready(
       },
       {
         nome: "Marco",
-        cognome: "Somma",
+        cognome: "Calvieri",
       },
       {
-        nome: "Anna",
-        cognome: "Di Maio",
+        nome: "Riccardo",
+        cognome: "Ferrari",
       }
     ];
     console.log(studenti);
 
     for (var key in studenti) {
     console.log((studenti[key].nome), (studenti[key].cognome));
-    document.getElementById('nomeCognome').innerHTML += (studenti[key].nome) + (studenti[key].cognome) + "<br>";
+    document.getElementById('nome').innerHTML += "<li>" + (studenti[key].nome) +  "</li>";
+    document.getElementById('cognome').innerHTML += "<li>" +  (studenti[key].cognome) + "</li>";
     // Ciclare su tutti gli studenti e stampare per ognuno nome e cognome;
-    $('p').hide();
+    $('ol').hide();
     $('h1').click(
-        function functionName() {
-        $('p').toggle();
+        function () {
+        $('ol').toggle();
         }
       )
     }
-
     // 3
     // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
     var nuovoStudente = {};
-    console.log(nuovoStudente);
     var chiediNome = prompt('Il tuo nome');
     nuovoStudente.nome = chiediNome;
     var chiediCognome = prompt('Il tuo cognome');
@@ -57,5 +56,6 @@ $(document).ready(
     var chiediEta = parseInt(prompt('La tua eta'));
     nuovoStudente.eta = chiediEta;
     studenti.push(nuovoStudente);
+
   }
 );
