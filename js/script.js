@@ -41,15 +41,21 @@ $(document).ready(
     $('p').hide();
     $('h1').click(
         function functionName() {
-        $('p').show();
+        $('p').toggle();
         }
       )
     }
 
+    // 3
     // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
-    var nome = prompt('Il tuo nome');
-    
-    // var cognome = promp('Il tuo cognome');
-    // var eta = prompt('La tua eta');
+    var nuovoStudente = {};
+    console.log(nuovoStudente);
+    var chiediNome = prompt('Il tuo nome');
+    nuovoStudente.nome = chiediNome;
+    var chiediCognome = prompt('Il tuo cognome');
+    nuovoStudente.cognome = chiediCognome;
+    var chiediEta = parseInt(prompt('La tua eta'));
+    nuovoStudente.eta = chiediEta;
+    studenti.push(nuovoStudente);
   }
 );
