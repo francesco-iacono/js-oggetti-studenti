@@ -34,17 +34,29 @@
   border-radius: 2px;
   margin: auto;
 }
+h1 {
+  cursor: pointer;
+}
+h1:hover {
+  filter: drop-shadow(0px 0px 11px rgba(255, 255, 255, 1));
+}
 .row-list {
   display: flex;
   justify-content: center;
   padding: 20px;
+  text-align: center;
 }
 .nomi, .cognomi {
   width: 100px;
 }
-li {
+#nome li {
   padding-top: 10px;
-  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  /* border-bottom: 2px solid rgba(255, 255, 255, 0.8); */
+  box-shadow: 8px 21px 3px -17px  rgba(255, 255, 255, 1);
+}
+#cognome li {
+  padding-top: 10px;
+  box-shadow: -26px 21px 3px -17px  rgba(255, 255, 255, 1);
 }
 #cognome {
   list-style-type: none;
